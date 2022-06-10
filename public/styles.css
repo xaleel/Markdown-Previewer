@@ -1,0 +1,273 @@
+@media (max-width: 870px) {
+    html{
+        font-size: 80%;
+    }
+}
+@media (max-width: 700px) {
+    html{
+        font-size: 70%;
+    }
+}
+@media (max-width: 610px) {
+    html{
+        font-size: 60%;
+    }
+}
+@media (max-width: 540px) {
+    html{
+        font-size: 50%;
+    }
+    button{
+        height: 2rem !important;
+    }
+}
+
+html{
+    min-height: 100vh;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#root{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.dark{
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+.blue{
+    background-color: #283d7c;
+    color: rgb(197, 165, 165);
+}
+
+.red{
+    background-color: rgb(165 32 32);
+    color: rgb(216, 215, 171);
+}
+
+.green{
+    background-color: rgb(44, 117, 34);
+    color: rgb(192, 240, 221);
+}
+
+#title1{
+    margin-top: 0;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-family: VT323;
+}
+
+#field{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#section{
+    display: flex;
+    flex-direction: column;
+}
+
+#toolbar1, #toolbar2{
+    width: 100%;
+    background-color:rgba(226, 214, 190, 0.7);
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
+    border-bottom: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+#toolbar > * {
+    margin: 0.25rem 1rem 0.25rem 1rem;
+}
+
+#toolbar1.dark, #toolbar2.dark{
+    color: rgb(175, 175, 175);
+    background-color: #474e64;
+
+}
+#toolbar1.blue, #toolbar2.blue{
+    background-color: #1b284d;
+}
+#toolbar1.red, #toolbar2.red{
+    background-color: rgb(117, 34, 34);
+}
+#toolbar1.green, #toolbar2.green{
+    background-color: rgb(28, 90, 20);
+}
+
+#title3{
+    margin: 0.5rem;
+    font-family: Cousine;
+}
+
+textarea{
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    margin-top: 0;
+    resize: none;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+    min-height: 60vh;
+    height: 100%;
+}
+
+textarea.dark{
+    background-color: #313236;
+    color: rgba(231, 227, 219, 0.7);
+}
+
+textarea.blue{
+    background-color: #354266;
+    color: rgba(231, 227, 219, 0.7);
+}
+
+textarea.red{
+    background-color: rgb(146, 54, 54);
+    color: rgba(231, 227, 219, 0.7);
+}
+
+textarea.green{
+    background-color: rgb(70, 134, 62);
+    color: rgba(231, 227, 219, 0.7);
+}
+
+#preview{
+    border: 1px solid gray;
+    min-height: 60vh;
+    font-family: Cousine;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+#container{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+button{
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 2px solid gray;
+    margin-left: 1rem;
+}
+
+#copied, #copy, #sample, #clear{
+    margin: auto 0.5rem;
+    font-family: Cousine;   
+}
+
+#copied{
+    font-size: 0.9rem;
+    opacity: 0;
+}
+
+#lArrow{
+    padding-right: 0.5rem;
+    border-right: 2px solid gray;
+}
+
+#rArrow{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+button:hover, #lArrow:hover, #rArrow:hover, #sample:hover, #clear:hover, #copy:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    border-bottom: 2px solid gray;
+}
+
+h2{
+    border-bottom: 1px solid gray;
+}
+
+pre{
+    padding: 0.5rem;
+    background-color: rgb(145, 145, 145, 0.3);
+}
+
+blockquote{
+    border-left: 3px solid gray;
+    padding-left: 0.5rem;
+    opacity: 0.8;
+}
+
+td, th{
+    border: 1px solid gray;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+table {
+    border-spacing: 0;
+}
+
+#colors {
+position: relative;
+display: inline-block;
+height: 4rem;
+}
+
+#colors:first-child{
+    margin-left: 0;
+}
+
+/* Tooltip text */
+#colors .tooltiptext {
+opacity: 0;
+background-color: rgba(82, 82, 82, 0.5);
+color: #fff;
+text-shadow: 0 0 5px black;
+text-align: center;
+font-family: VT323;
+font-size: 1.35rem;
+padding: 5px 0;
+border-radius: 6px; /* s */
+position: absolute;
+z-index: 1;
+width: 7rem;
+top: 45%;
+left: 38%;
+margin-left: -2rem;
+transition: opacity 0.25s ease-out;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#colors:hover .tooltiptext {
+    opacity: 1;
+}
