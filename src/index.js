@@ -217,6 +217,14 @@ class App extends Component {
               <div id='preview'></div>
             </div>
           </div>
+          <div className='footer'>
+              <p>
+                Made by 
+                <a href='https://xaleel.github.io/' target="_blank" rel="noopener noreferrer">Khaleel</a>
+                @ 2022. 
+                <a href='https://github.com/xaleel/Markdown-Previewer' target="_blank" rel="noopener noreferrer">Source code</a>.
+              </p>
+          </div>
           <div id='container'>
             <div id='colors'>
               <button className='theme-btn' id='btn-l' onClick={this.light} style={{marginLeft: 0}}></button>
