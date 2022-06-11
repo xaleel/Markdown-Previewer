@@ -24,12 +24,14 @@
 
 html{
     min-height: 100vh;
+    font-size: calc((1vh + 1vw) / 2);
 }
 
 body{
-    width: 100%;
+    width: 100vw;
     min-height: 100vh;
     margin: 0;
+    overflow-x: hidden;
 }
 
 #root{
@@ -317,4 +319,7 @@ transition: opacity 0.25s ease-out;
 
 .footer{
     font-size: 90%;
+    font-family: Cousine;
+    color: #505050;
+    text-shadow: 0 0 0 #ffffff66;   
 }
