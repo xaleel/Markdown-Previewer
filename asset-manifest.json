@@ -1,11 +1,11 @@
 {
-  "main.js": "/markdown/static/js/main.06d06543.chunk.js",
-  "main.js.map": "/markdown/static/js/main.06d06543.chunk.js.map",
-  "runtime~main.js": "/markdown/static/js/runtime~main.7d448bfc.js",
-  "runtime~main.js.map": "/markdown/static/js/runtime~main.7d448bfc.js.map",
-  "static/js/2.168b5bbc.chunk.js": "/markdown/static/js/2.168b5bbc.chunk.js",
-  "static/js/2.168b5bbc.chunk.js.map": "/markdown/static/js/2.168b5bbc.chunk.js.map",
-  "index.html": "/markdown/index.html",
-  "precache-manifest.b42b5f87b39d88d8e86075767413d868.js": "/markdown/precache-manifest.b42b5f87b39d88d8e86075767413d868.js",
-  "service-worker.js": "/markdown/service-worker.js"
+  "main.js": "/Markdown-Previewer/static/js/main.06d06543.chunk.js",
+  "main.js.map": "/Markdown-Previewer/static/js/main.06d06543.chunk.js.map",
+  "runtime~main.js": "/Markdown-Previewer/static/js/runtime~main.01fd9653.js",
+  "runtime~main.js.map": "/Markdown-Previewer/static/js/runtime~main.01fd9653.js.map",
+  "static/js/2.168b5bbc.chunk.js": "/Markdown-Previewer/static/js/2.168b5bbc.chunk.js",
+  "static/js/2.168b5bbc.chunk.js.map": "/Markdown-Previewer/static/js/2.168b5bbc.chunk.js.map",
+  "index.html": "/Markdown-Previewer/index.html",
+  "precache-manifest.1b09aa3921f3dd72ef1407e1df3a06eb.js": "/Markdown-Previewer/precache-manifest.1b09aa3921f3dd72ef1407e1df3a06eb.js",
+  "service-worker.js": "/Markdown-Previewer/service-worker.js"
 }
