@@ -71,19 +71,22 @@ class App extends Component {
     expand = () => {
       switch(this.state.areaSize){
         case 0:
-          document.getElementById('sec2').className = 'w100';
-          document.getElementById('section').className = 'w100';
+          document.getElementById('sec2').className = 'w50';
+          document.getElementById('section').className = 'w50';
           this.setState({areaSize: 1})
           break;
         case 1:
-          document.getElementById('sec2').className = 'w50';
-          document.getElementById('section').className = 'w150';
+          document.getElementById('sec2').className = 'w40';
+          document.getElementById('section').className = 'w60';
           this.setState({areaSize: 2})
           break;
         case 2:
           document.getElementById('section').className = 'w100';
           document.getElementById('sec2').className = 'hidden';
           this.setState({areaSize: 3});
+          setTimeout(() => {
+            document.getElementById('sec2').className = 'no-dsp';
+          }, 450);
           break;
         default:
           console.log('error')
@@ -93,19 +96,22 @@ class App extends Component {
     retract = () => {
       switch(this.state.areaSize){
         case 3:
-          document.getElementById('sec2').className = 'w50';
-          document.getElementById('section').className = 'w150';
+          document.getElementById('sec2').className = 'w40';
+          document.getElementById('section').className = 'w60';
           this.setState({areaSize: 2})
           break;
         case 2:
-          document.getElementById('sec2').className = 'w100';
-          document.getElementById('section').className = 'w100';
+          document.getElementById('sec2').className = 'w50';
+          document.getElementById('section').className = 'w50';
           this.setState({areaSize: 1})
           break;
         case 1:
           document.getElementById('section').className = 'hidden';
           document.getElementById('sec2').className = 'w100';
           this.setState({areaSize: 0});
+          setTimeout(() => {
+            document.getElementById('section').className = 'no-dsp';
+          }, 450);
           break;
         default:
           console.log('error')
@@ -195,14 +201,14 @@ class App extends Component {
         <div id='main' className='main'>
           <h1 id='title1'>Markdown Previewer</h1>
           <div id='field'>
-            <div id='section'>
+            <div id='section' className='w100'>
               <div id='toolbar1'>
                 <h3 id='title3'>Editor</h3>
                 {arrow}
               </div>
               <textarea id='editor' onChange={this.handleChange}/>
             </div>
-            <div id='sec2'>
+            <div id='sec2' className='w100'>
               <div id='toolbar2'>
                 {exp}
                 <h3 id='title3'>Preview</h3>
