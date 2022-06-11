@@ -290,11 +290,11 @@ transition: opacity 0.25s ease-out;
 }
 
 .w40{
-    width: calc(50vw - 3rem);
+    width: calc(40vw - 3rem);
 }
 
 .w50{
-    width: calc(40vw - 3rem);
+    width: calc(50vw - 3rem);
 }
 
 .w60{
@@ -312,5 +312,5 @@ transition: opacity 0.25s ease-out;
 }
 
 .no-dsp{
-    display: none;
+    display: none !important;
 }
