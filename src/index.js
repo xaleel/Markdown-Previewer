@@ -103,8 +103,9 @@ class App extends Component {
           this.setState({areaSize: 1})
           break;
         case 1:
-          document.getElementById('section').style.display = 'none';
-          document.getElementById('field').style.gridTemplateColumns = '1fr';
+          document.getElementById('section').style.opacity = 0;
+          document.getElementById('section').style.width = 0;
+          document.getElementById('sec2').style.width = '1fr';
           this.setState({areaSize: 0});
           break;
         default:
