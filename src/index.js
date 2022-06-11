@@ -71,18 +71,18 @@ class App extends Component {
     expand = () => {
       switch(this.state.areaSize){
         case 0:
-          document.getElementById('section').style.display = 'flex';
-          document.getElementById('section').style.flexDirection = 'column';
-          document.getElementById('field').style.gridTemplateColumns = '1fr 1fr';
-          this.setState({areaSize: 1});
+          document.getElementById('sec2').className = 'w100';
+          document.getElementById('section').className = 'w100';
+          this.setState({areaSize: 1})
           break;
         case 1:
-          document.getElementById('field').style.gridTemplateColumns = '2fr 1fr';
-          this.setState({areaSize: 2});
+          document.getElementById('sec2').className = 'w50';
+          document.getElementById('section').className = 'w150';
+          this.setState({areaSize: 2})
           break;
         case 2:
-          document.getElementById('sec2').style.display = 'none';
-          document.getElementById('field').style.gridTemplateColumns = '1fr';
+          document.getElementById('section').className = 'w100';
+          document.getElementById('sec2').className = 'hidden';
           this.setState({areaSize: 3});
           break;
         default:
@@ -93,19 +93,18 @@ class App extends Component {
     retract = () => {
       switch(this.state.areaSize){
         case 3:
-          document.getElementById('sec2').style.display = 'flex';
-          document.getElementById('sec2').style.flexDirection = 'column';
-          document.getElementById('field').style.gridTemplateColumns = '2fr 1fr';
+          document.getElementById('sec2').className = 'w50';
+          document.getElementById('section').className = 'w150';
           this.setState({areaSize: 2})
           break;
         case 2:
-          document.getElementById('field').style.gridTemplateColumns = '1fr 1fr';
+          document.getElementById('sec2').className = 'w100';
+          document.getElementById('section').className = 'w100';
           this.setState({areaSize: 1})
           break;
         case 1:
-          document.getElementById('section').style.opacity = 0;
-          document.getElementById('section').style.width = 0;
-          document.getElementById('sec2').style.width = '1fr';
+          document.getElementById('section').className = 'hidden';
+          document.getElementById('sec2').className = 'w100';
           this.setState({areaSize: 0});
           break;
         default:
