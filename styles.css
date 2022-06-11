@@ -76,11 +76,17 @@ body{
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     padding: 2rem;
+    transition: grid-template-columns 300ms;
 }
 
 #section{
     display: flex;
     flex-direction: column;
+    transition: width 300ms;
+}
+
+#sec2{
+    transition: width 300ms;
 }
 
 #toolbar1, #toolbar2{
