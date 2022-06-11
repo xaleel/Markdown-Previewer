@@ -284,3 +284,17 @@ transition: opacity 0.25s ease-out;
 .theme-btn{
     transition: border-radius 300ms;
 }
+
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+.w150{
+    width: 150%;
+}
+.hidden{
+    position: absolute;
+    visibility: hidden;
+}
