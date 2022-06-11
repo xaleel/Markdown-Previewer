@@ -72,17 +72,15 @@ body{
 }
 
 #field{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 2rem;
     padding: 2rem;
-    transition: grid-template-columns 300ms;
 }
 
 #section{
     display: flex;
     flex-direction: column;
-    transition: width 300ms;
+    transition: all 300ms;
 }
 
 #sec2{
@@ -181,6 +179,7 @@ button{
     width: 1.5rem;
     border: 2px solid gray;
     margin-left: 1rem;
+    outline: none;
 }
 
 #copied, #copy, #sample, #clear{
