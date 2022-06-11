@@ -29,6 +29,7 @@ class App extends Component {
     }
 
     light = () => {
+      this.squareBtns('btn-l')
       document.querySelector('#main').className = 'main';
       document.querySelector('textarea').className = '';
       document.querySelector('#toolbar1').className = '';
@@ -36,27 +37,31 @@ class App extends Component {
     }
 
     blue = () => {
+      this.squareBtns('btn-b')
       document.querySelector('#main').className = 'main blue';
       document.querySelector('textarea').className = 'blue';
       document.querySelector('#toolbar1').className = 'blue';
       document.querySelector('#toolbar2').className = 'blue';
     }
-
+    
     dark = () => {
+      this.squareBtns('btn-d')
       document.querySelector('#main').className = 'main dark';
       document.querySelector('textarea').className = 'dark';
       document.querySelector('#toolbar1').className = 'dark';
       document.querySelector('#toolbar2').className = 'dark';
     }
-
+    
     red = () => {
+      this.squareBtns('btn-r')
       document.querySelector('#main').className = 'main red';
       document.querySelector('textarea').className = 'red';
       document.querySelector('#toolbar1').className = 'red';
       document.querySelector('#toolbar2').className = 'red';
     }
-
+    
     green = () => {
+      this.squareBtns('btn-g')
       document.querySelector('#main').className = 'main green';
       document.querySelector('textarea').className = 'green';
       document.querySelector('#toolbar1').className = 'green';
@@ -139,6 +144,13 @@ class App extends Component {
       window.getSelection().removeAllRanges();
     }
 
+    squareBtns = (id) => {
+      document.querySelectorAll('.theme-btn').forEach(btn => {
+        btn.classList.remove('squared')
+      })
+      document.querySelector(`#${id}`).classList.add('squared');
+    }
+
     render(){
       let arrow, exp;
       let copyButton = <div onClick={ this.copy }><i id='copy' className="fa-solid fa-copy"></i></div>
@@ -201,11 +213,11 @@ class App extends Component {
           </div>
           <div id='container'>
             <div id='colors'>
-              <button onClick={this.light} style={{marginLeft: 0}}></button>
-              <button onClick={this.blue} style={{backgroundColor: '#2970ad'}}></button>
-              <button onClick={this.dark} style={{backgroundColor: '#313236'}}></button>
-              <button onClick={this.red} style={{backgroundColor: 'rgb(165 32 32'}}></button>
-              <button onClick={this.green} style={{backgroundColor: 'rgb(70, 146, 70)'}}></button>
+              <button className='theme-btn' id='btn-l' onClick={this.light} style={{marginLeft: 0}}></button>
+              <button className='theme-btn' id='btn-b' onClick={this.blue} style={{backgroundColor: '#2970ad'}}></button>
+              <button className='theme-btn' id='btn-d' onClick={this.dark} style={{backgroundColor: '#313236'}}></button>
+              <button className='theme-btn' id='btn-r' onClick={this.red} style={{backgroundColor: 'rgb(165 32 32'}}></button>
+              <button className='theme-btn' id='btn-g' onClick={this.green} style={{backgroundColor: 'rgb(70, 146, 70)'}}></button>
               <span className='tooltiptext'>Color theme</span>
             </div>  
           </div>
@@ -239,17 +251,17 @@ function sample(){
   }
   \`\`\`
   
-  You can also make text **bold**... whoa!
+  You can also make the text **bold**... whoa!
   Or _italic_.
   Or... wait for it... **_both!_**
   And feel free to go crazy ~~crossing stuff out~~.
   
-  There's also [links](https://www.freecodecamp.org), and
+  There's also [links](https://xaleel.github.io/Markdown-Previewer/), and
   > Block Quotes!
   
   And if you want to get really crazy, even tables:
   
-  Wild Header | Crazy Header | Another Header?
+  First Header | Another Header | One more Header?
   ------------ | ------------- | -------------
   Your content can | be here, and it | can be here....
   And here. | Okay. | I think we get it.
@@ -263,7 +275,7 @@ function sample(){
   1. And there are numbered lists too.
   1. Use just 1s if you want!
   1. And last but not least, let's not forget embedded images:
-  ![cat](https://pbs.twimg.com/profile_images/664169149002874880/z1fmxo00_400x400.jpg)
+  ![React](https://www.shareicon.net/data/256x256/2016/08/01/640324_logo_512x512.png)
   `
   return text;
 }
