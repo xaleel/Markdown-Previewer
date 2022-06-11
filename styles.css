@@ -55,7 +55,7 @@ body{
 }
 
 .red{
-    background-color: rgb(165 32 32);
+    background-color: rgba(125, 27, 27, 0.95);
     color: rgb(216, 215, 171);
 }
 
@@ -120,7 +120,7 @@ body{
     background-color: rgb(117, 34, 34);
 }
 #toolbar1.green, #toolbar2.green{
-    background-color: rgb(28, 90, 20);
+    background-color: rgb(48, 86, 43);
 }
 
 #title3{
@@ -157,8 +157,8 @@ textarea.red{
 }
 
 textarea.green{
-    background-color: rgb(70, 134, 62);
-    color: rgba(231, 227, 219, 0.7);
+    background-color: rgb(66, 111, 62);
+    color: rgba(231, 227, 219, 0.8);
 }
 
 #preview{
@@ -276,4 +276,12 @@ transition: opacity 0.25s ease-out;
 /* Show the tooltip text when you mouse over the tooltip container */
 #colors:hover .tooltiptext {
     opacity: 1;
+}
+
+.squared{
+    border-radius: 0 !important;
+}
+
+.theme-btn{
+    transition: border-radius 300ms;
 }
